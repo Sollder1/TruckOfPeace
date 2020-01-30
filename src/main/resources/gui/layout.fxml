@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<StackPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="de.sollder1.truckofpeace.game.Controller">
+   <children>
+      <AnchorPane prefHeight="200.0" prefWidth="200.0">
+         <children>
+            <Button layoutX="668.0" layoutY="325.0" mnemonicParsing="false" onAction="#startNextLevelButtonPressed" prefHeight="61.0" prefWidth="118.0" text="Weiter">
+               <font>
+                  <Font size="20.0" />
+               </font></Button>
+            <Label layoutX="242.0" layoutY="14.0" text="Allah gewinnt!!">
+               <font>
+                  <Font size="48.0" />
+               </font>
+            </Label>
+            <Label layoutX="32.0" layoutY="114.0" text="Mithilfe deines Massenmordes an Unschuldigen hast du den Islam weiter gebracht. ">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <Label fx:id="endSentence" layoutX="32.0" layoutY="147.0" text=" d">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <Label fx:id="jungFrauenCount" layoutX="14.0" layoutY="34.0" text="Gesamt Punkte: -">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Label>
+            <HBox alignment="CENTER_LEFT" layoutX="14.0" layoutY="200.0" prefHeight="40.0" prefWidth="250.0" spacing="1.0">
+               <children>
+                  <Label text="Truck Speed W">
+                     <HBox.margin>
+                        <Insets right="10.0" />
+                     </HBox.margin>
+                  </Label>
+                  <Button fx:id="speedUpgradeMinus_W" alignment="CENTER" disable="true" mnemonicParsing="false" onAction="#speedUpgradeMinus_W_pressed" prefHeight="25.0" prefWidth="25.0" text="-" />
+                  <TextField fx:id="speedUpgradeLevel_W" alignment="CENTER" prefHeight="25.0" prefWidth="35.0" text="1" />
+                  <Button fx:id="speedUpgradePlus_W" alignment="CENTER" mnemonicParsing="false" onAction="#speedUpgradePlus_W_pressed" prefHeight="25.0" prefWidth="25.0" text="+" />
+                  <Label fx:id="speedUpgradeCost_W" text="25">
+                     <HBox.margin>
+                        <Insets left="20.0" />
+                     </HBox.margin>
+                  </Label>
+               </children>
+            </HBox>
+            <HBox alignment="CENTER_LEFT" layoutX="14.0" layoutY="258.0" prefHeight="40.0" prefWidth="250.0" spacing="1.0">
+               <children>
+                  <Label text="Truck Speed S">
+                     <HBox.margin>
+                        <Insets right="15.0" />
+                     </HBox.margin>
+                  </Label>
+                  <Button fx:id="speedUpgradeMinus_S" alignment="CENTER" disable="true" mnemonicParsing="false" onAction="#speedUpgradeMinus_S_pressed" prefHeight="25.0" prefWidth="25.0" text="-" />
+                  <TextField fx:id="speedUpgradeLevel_S" alignment="CENTER" prefHeight="25.0" prefWidth="35.0" text="1" />
+                  <Button fx:id="speedUpgradePlus_S" alignment="CENTER" mnemonicParsing="false" onAction="#speedUpgradePlus_S_pressed" prefHeight="25.0" prefWidth="25.0" text="+" />
+                  <Label fx:id="speedUpgradeCost_S" text="25">
+                     <HBox.margin>
+                        <Insets left="20.0" />
+                     </HBox.margin>
+                  </Label>
+               </children>
+            </HBox>
+         </children>
+      </AnchorPane>
+   </children>
+</StackPane>
