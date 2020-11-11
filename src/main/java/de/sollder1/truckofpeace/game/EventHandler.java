@@ -37,20 +37,20 @@ public class EventHandler {
 			}
 			
 			if(event.getText().equals("w"))
-				gameField.keysPressed[0] = true;
+				GameField.keysPressed[0] = true;
 			
 			if(event.getText().equals("s"))
-				gameField.keysPressed[1] = true;
+				GameField.keysPressed[1] = true;
 			
 		});
 		
 		superElement.setOnKeyReleased(event -> {
 			
 			if(event.getText().equals("w"))
-				gameField.keysPressed[0] = false;
+				GameField.keysPressed[0] = false;
 			
 			if(event.getText().equals("s"))
-				gameField.keysPressed[1] = false;
+				GameField.keysPressed[1] = false;
 			
 			
 		});

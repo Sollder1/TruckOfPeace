@@ -16,7 +16,7 @@ public class Main extends Application {
 	private static double height = 400;
 	private static double width = 800;
 	
-	public static gameField gF = new gameField();
+	public static GameField gF = new GameField();
 	
 	private static StackPane root;
 	
@@ -26,7 +26,6 @@ public class Main extends Application {
 	public void start(Stage primaryStage) {
 		
 		try {
-
 
 			//BACKGROUND MUSIK
 			Media sound = new Media(this.getClass().getResource("/sfx/background.mp3").toString());

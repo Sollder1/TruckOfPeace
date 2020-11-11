@@ -12,7 +12,7 @@ import javafx.scene.paint.Color;
 import javafx.scene.text.Font;
 
 
-public class gameField extends Canvas {
+public class GameField extends Canvas {
 
 	protected static Boolean keysPressed[] = {false, false};	
 	private AnimationTimer s;
@@ -26,7 +26,7 @@ public class gameField extends Canvas {
 	
 	int points = 0;
 	
-	public gameField(){
+	public GameField(){
 		
 		super(Main.getWidth(), Main.getHeight());
 		
@@ -53,16 +53,12 @@ public class gameField extends Canvas {
 			public void handle(long now) {
 				
 				clearOldDraw();
-				
 				doWork();
-				
 				guiUpdate();
-				
 			}
 		};
 		
 		s.start();
-	
 	}
 	
 	public void pauseGameLoop() {
@@ -103,8 +99,8 @@ public class gameField extends Canvas {
 		}else{
 		
 			currentMap.move(speed);
-			currentMap.spawnEnemys();
-			currentMap.spawnEnemys();
+			currentMap.spawnEnemies();
+			currentMap.spawnEnemies();
 			
 		}
 		
@@ -126,7 +122,7 @@ public class gameField extends Canvas {
 			
 			if(fM.getAlive()) {
 				
-				Boolean dies = CollisionDetection.checkRect(t.getPos(), t.getWidth(), t.getHeigth(), fM.getPos(), fM.getWidth(), fM.getHeigth());
+				Boolean dies = CollisionDetection.checkRect(t.getPos(), t.getWidth(), t.getHeigth(), fM.getPos(), fM.getWidth(), fM.getHeight());
 				
 				if(dies) {
 					

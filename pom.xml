@@ -6,7 +6,7 @@
 
     <groupId>de.sollder1</groupId>
     <artifactId>TruckOfPeace</artifactId>
-    <version>0.2</version>
+    <version>0.2-SNAPSHOT</version>
     <name>Truck of Peace</name>
     <packaging>jar</packaging>
 

@@ -45,7 +45,7 @@ public class Map {
 		
 	}
 	
-	public void spawnEnemys() {
+	public void spawnEnemies() {
 		
 		//Generiere Frenchman
 		int ran = (int) (Math.random() * 200);

@@ -10,7 +10,7 @@ public abstract class Enemy {
 	protected Boolean alive = true;
 	
 	protected double width;
-	protected double heigth;
+	protected double height;
 	
 	protected Point pos;
 	
@@ -61,9 +61,9 @@ public abstract class Enemy {
 		
 	}
 
-	public double getHeigth() {
+	public double getHeight() {
 		
-		return heigth;
+		return height;
 		
 	}
 	
